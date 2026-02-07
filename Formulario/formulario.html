@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <nav>   
+    <a href="index.html">Presentacion</a>
+    <a href="formulario.html">Formulario</a>
+    </nav>
+
+</head>
+<body>
+    <h1>Paquetico</h1>
+    <main>
+        <Section>
+        <form action="https://httpbin.org/post" method="post">
+             <form action="https://httpbin.org/post" method="post">
+          <p>
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              name="nombre_usuario"
+              placeholder="Inserta el nombre aquí"
+              id="nombre"
+            />
+          </p>
+
+          <p>
+            <label for="apellido">Apellido</label>
+            <input
+              id="apellido"
+              type="text"
+              name="apellido"
+              placeholder="Inserta el apellido aquí"
+            />
+          </p>
+          <p>
+            <label for="password">Contraseña</label>
+            <input id="password" type="password" name="password" placeholder="Contraseña" />
+          </p>
+            <p>
+                <p><b>Sexo</b></p>
+                <input type="radio" name="Sexo" value="Masculino">Masculino<br>
+                <input type="radio" name="Sexo" value="Femenino">Femenino<br>
+                <input type="radio" name="Sexo" value="Soy un Transformer">Soy un Transformer<br>
+            </p>
+
+            <p>
+                <label for="Conoximiento y manejos de programas"><b>Programas y lenguajes de Codigo</b></label>
+                <br />
+                <input type="checkbox" name="skills" value="Excel" /> Excel
+                <input type="checkbox" name="skills" value="Dynamics" /> Dynamics
+                <input type="checkbox" name="skills" value="C#" /> C#
+                <input type="checkbox" name="skills" value="Javascript" /> Javascript
+            </p>
+
+            <P>
+                <p><b>Idiomas</b></p>
+                <select name="menu" size="5" multiple>
+                <option value="Ingles">Ingles</option>
+                <option value="Frances">Frances</option>
+                <option value="Español">Español</option>
+                <option value="Italiano">Italiano</option>
+                <option value="Portugues">Portugues</option>
+                </select>
+            </P>
+
+            <p>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="">Deje su comentario aqui</textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="borrar parametros">
+            </p>
+
+        </Section>
+    </main>
+</body>
+</html>
